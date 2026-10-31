@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function ex10dead_common_library_setup() {
-	__info "setting up ex10dead_common_library"
+	echo "setting up ex10dead_common_library"
 
 	cd "$__ex10dead_common_library_library_path/"
 
@@ -9,7 +9,7 @@ function ex10dead_common_library_setup() {
 	real="$(realpath -- "$__ex10dead_common_library_library_path/library/common")" || return 1
 	sourced_files["$real"]=1
 
-	__success "setting up ex10dead_common_library"
+	echo "setting up ex10dead_common_library"
 }
 
 register_handler "ex10dead_common_library_setup" "ex10dead_common_library_setup"
