@@ -1072,7 +1072,7 @@ function __ceil() {
 #
 #
 
-function require_once() {
+function __require_once() {
 	local file="$1"
 
 	if ! source_once "$file"; then
