@@ -3,11 +3,12 @@
 function ex10dead_common_library_setup() {
 	echo "setting up ex10dead_common_library"
 
-	cd "$__ex10dead_common_library_library_path/"
 
 	local real
 	real="$(realpath -- "$__ex10dead_common_library_library_path/library/common")" || return 1
 	sourced_files["$real"]=1
+
+	cd "$__ex10dead_common_library_library_path/"
 
 	echo "setting up ex10dead_common_library"
 }
