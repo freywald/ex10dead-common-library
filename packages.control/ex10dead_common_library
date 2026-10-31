@@ -12,4 +12,4 @@ function ex10dead_common_library_setup() {
 	echo "setting up ex10dead_common_library"
 }
 
-register_handler "ex10dead_common_library_setup" "ex10dead_common_library_setup"
+register_handler "ex10dead_common_library" "ex10dead_common_library_setup"
